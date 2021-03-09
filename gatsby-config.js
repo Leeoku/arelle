@@ -5,9 +5,9 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`,
+    title: `Arelle Pastries`,
+    description: `Landing Page for Arelle Pastries`,
+    author: `@Leeoku`,
   },
   plugins: [
     `gatsby-plugin-eslint`,
@@ -34,6 +34,14 @@ module.exports = {
             ? [require(`cssnano`)]
             : []),
         ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/ // See below to configure properly
+        },
       },
     },
     `gatsby-plugin-offline`,

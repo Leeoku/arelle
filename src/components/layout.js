@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import React from "react";
-
 import Header from "./header";
 
 function Layout({ children }) {
@@ -22,7 +21,7 @@ function Layout({ children }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Taylor Bryant
+              Kenneth Lee
             </a>
           </p>
 
